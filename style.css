@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    color: #ccc;
+    font-family: system-ui;
+}
+
+.scroll-btn {
+    border: none;
+    display: block;
+    position: fixed;
+    bottom: 3%;
+    left: 2%;
+    background-color: #ccc;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+    color: #222;
+    display: none;
+}
+
+.scroll-btn:hover {
+    box-shadow: 0px 0px 14px black;
+}
+
+.scroll-btn i {
+    font-size: 20px;
+    line-height: 40px;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.inputs {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 4px;
+    margin: 10px 0;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+input:focus {
+    transform: scale(1.1);
+    border: #ccc solid 2px;
+}
+
+.price input {
+    width: 20%;
+    padding: 4px;
+}
+
+small {
+    background-color: red;
+    padding: 4px 2px;
+    border-radius: 4px;
+    cursor: default;
+}
+
+small::before {
+    content: 'Total: ';
+}
+
+.outputs button, #submit {
+    width: 100%;
+    /* font-size: 18px; */
+    padding: 10px 0;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color: #222d83;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#submit:hover {
+    letter-spacing: 1.5px;
+    background-color: rgb(52, 61, 127);
+
+}
+
+.search-bloc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bloc button {
+    cursor: pointer;
+    background-color: rgb(34, 45, 131);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    width: 45%;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    transition: .4s;
+}
+
+.outputs button:hover,
+.search-bloc button:hover {
+    background-color: rgb(52, 61, 127);
+    letter-spacing: 1.5px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+table thead th {
+    border-bottom: 1px #ccc solid;
+}
+
+th  {
+    text-transform: uppercase;
+}
+
+th,td {
+    padding: 5px;
+}
+
+table button {
+    background-color: rgb(34, 45, 131);
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    transition: .3s;
+    padding: 5px;
+}
